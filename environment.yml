@@ -1,0 +1,28 @@
+name: sciview
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pyyaml
+  - python=3.8
+  - pip
+  - numpy  
+  - Pillow
+  - pyimagej
+  - opencv
+  - matplotlib
+  - scipy
+  - pandas
+  - seaborn
+  - scikit-learn
+#  - openjdk >=8.0.192,<8.1.0a0
+  - openjdk >=11.0.6
+  - pytorch
+  - tensorflow-gpu
+  - pytorch
+  - ipykernel
+  - pip:
+      - pathlib
+      - requests
+      - pyinstaller
+      - jgo>=1.0.1
