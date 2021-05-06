@@ -11,7 +11,7 @@ def setup_sciview_dependencies():
 
     # Import/load dependencies
     sciview_deps = [
-        'sc.iview:sciview:f4dd286', 'graphics.scenery:scenery:937ba10',
+        'sc.iview:sciview:03e43a7', 'graphics.scenery:scenery:937ba10',
         'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.4.20',
         'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9'
     ]

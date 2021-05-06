@@ -24,7 +24,12 @@ labels_dataset = 'jrc_macrophage-2.n5/labels/er_pred/s5'
 
 em = N5Utils.open(n5, em_dataset)
 em_rai = JObject(em, RandomAccessibleInterval)
-BdvFunctions.show(em_rai, 'em')
+#BdvFunctions.show(em_rai, 'em')
 
 # Launch sciview
-#sv = SciView.create()
+sv = SciView.create()
+#sv = SciView.createThreaded()
+
+print(sv.isInitialized())
+
+sv.addVolume(em_rai)
