@@ -1,6 +1,6 @@
 # By Kyle Harrington (2021), mdc@kyleharrington.com
 
-from jpype import JObject
+from jpype import JObject, JException
 from scyjava import jimport, to_java
 from sciview_pyground import setup_sciview_dependencies
 
@@ -32,4 +32,5 @@ sv = SciView.create()
 
 print(sv.isInitialized())
 
-sv.addVolume(em_rai)
+# Note that currently the voxel resolution is required or an index OOB exception will be thrown
+sv.addVolume(em_rai, "em", [4.0, 4.0, 3.36])
