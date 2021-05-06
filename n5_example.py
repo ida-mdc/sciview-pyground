@@ -28,9 +28,6 @@ em_rai = JObject(em, RandomAccessibleInterval)
 
 # Launch sciview
 sv = SciView.create()
-#sv = SciView.createThreaded()
-
-print(sv.isInitialized())
 
 # Note that currently the voxel resolution is required or an index OOB exception will be thrown
 sv.addVolume(em_rai, "em", [4.0, 4.0, 3.36])
