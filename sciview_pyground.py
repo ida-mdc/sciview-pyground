@@ -16,9 +16,14 @@ def setup_sciview_dependencies():
         'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9'
     ]
 
+    n5_deps = ['org.janelia.saalfeldlab:n5-ij:2.0.1-SNAPSHOT']
+
     dependencies = [
-        'net.imagej:imagej:2.1.0', 'sc.fiji:bigdataviewer-core:10.1.1-SNAPSHOT'
-    ] + sciview_deps
+        #        'net.imagej:imagej:2.1.0',
+        'sc.fiji:bigdataviewer-vistools:1.0.0-beta-29-SNAPSHOT'
+    ] + sciview_deps + n5_deps
+
+    #    , 'sc.fiji:bigdataviewer-core:10.1.1-SNAPSHOT'
 
     for dep in dependencies:
         config.add_endpoints(dep)
